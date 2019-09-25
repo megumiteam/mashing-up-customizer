@@ -39,6 +39,20 @@ class MashingUpCustomizerACFAdminSetup extends MashingUpCustomizerInit {
 			'parent_slug' => $common_page['menu_slug'],
 			'autoload'    => true,
 		));
+		acf_add_options_sub_page(array(
+			'page_title'  => __( 'チケットバナー', $this->domain ),
+			'menu_title'  => __( 'チケットバナー', $this->domain ),
+			'menu_slug'   => 'ticket',
+			'parent_slug' => $common_page['menu_slug'],
+			'autoload'    => true,
+		));
+		acf_add_options_sub_page(array(
+			'page_title'  => __( 'メルマガ', $this->domain ),
+			'menu_title'  => __( 'メルマガ', $this->domain ),
+			'menu_slug'   => 'mailmagazine',
+			'parent_slug' => $common_page['menu_slug'],
+			'autoload'    => true,
+		));
 		$option_page = acf_add_options_page(array(
 			'page_title' => __( 'フロントページ設定', $this->domain ),
 			'menu_title' => __( 'フロントページ設定', $this->domain ),
@@ -71,6 +85,13 @@ class MashingUpCustomizerACFAdminSetup extends MashingUpCustomizerInit {
 			'autoload'    => true,
 		));
 		acf_add_options_sub_page(array(
+			'page_title'  => __( 'WHY ATTEND?', $this->domain ),
+			'menu_title'  => __( 'WHY ATTEND?', $this->domain ),
+			'menu_slug'   => 'why-attend',
+			'parent_slug' => $option_page['menu_slug'],
+			'autoload'    => true,
+		));
+		acf_add_options_sub_page(array(
 			'page_title'  => __( 'スピーカー', $this->domain ),
 			'menu_title'  => __( 'スピーカー', $this->domain ),
 			'menu_slug'   => 'speaker',
@@ -78,16 +99,30 @@ class MashingUpCustomizerACFAdminSetup extends MashingUpCustomizerInit {
 			'autoload'    => true,
 		));
 		acf_add_options_sub_page(array(
-			'page_title'  => __( 'ビルボードバナー', $this->domain ),
-			'menu_title'  => __( 'ビルボードバナー', $this->domain ),
-			'menu_slug'   => 'billboard-banner',
+			'page_title'  => __( 'AWARD', $this->domain ),
+			'menu_title'  => __( 'AWARD', $this->domain ),
+			'menu_slug'   => 'award',
 			'parent_slug' => $option_page['menu_slug'],
 			'autoload'    => true,
 		));
 		acf_add_options_sub_page(array(
-			'page_title'  => __( 'OUTLINE', $this->domain ),
-			'menu_title'  => __( 'OUTLINE', $this->domain ),
-			'menu_slug'   => 'outline',
+			'page_title'  => __( 'BUY TICHKETS', $this->domain ),
+			'menu_title'  => __( 'BUY TICHKETS', $this->domain ),
+			'menu_slug'   => 'buy-tickets',
+			'parent_slug' => $option_page['menu_slug'],
+			'autoload'    => true,
+		));
+		acf_add_options_sub_page(array(
+			'page_title'  => __( 'MAP', $this->domain ),
+			'menu_title'  => __( 'MAP', $this->domain ),
+			'menu_slug'   => 'map',
+			'parent_slug' => $option_page['menu_slug'],
+			'autoload'    => true,
+		));
+		acf_add_options_sub_page(array(
+			'page_title'  => __( 'COMMENTS', $this->domain ),
+			'menu_title'  => __( 'COMMENTS', $this->domain ),
+			'menu_slug'   => 'comments',
 			'parent_slug' => $option_page['menu_slug'],
 			'autoload'    => true,
 		));
@@ -95,13 +130,6 @@ class MashingUpCustomizerACFAdminSetup extends MashingUpCustomizerInit {
 			'page_title'  => __( 'スポンサーグループ', $this->domain ),
 			'menu_title'  => __( 'TOPに表示するスポンサーグループ', $this->domain ),
 			'menu_slug'   => 'select-sponsor',
-			'parent_slug' => $option_page['menu_slug'],
-			'autoload'    => true,
-		));
-		acf_add_options_sub_page(array(
-			'page_title'  => __( '帯画像', $this->domain ),
-			'menu_title'  => __( '帯画像', $this->domain ),
-			'menu_slug'   => 'gallery',
 			'parent_slug' => $option_page['menu_slug'],
 			'autoload'    => true,
 		));
