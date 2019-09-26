@@ -479,6 +479,25 @@ acf_add_local_field_group(array(
 	'title' => 'BUY TICKETS',
 	'fields' => array(
 		array(
+			'key' => 'field_5d88743ca0272',
+			'label' => 'リード文',
+			'name' => 'ticket-module-lead',
+			'type' => 'textarea',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'placeholder' => '',
+			'maxlength' => '',
+			'rows' => 3,
+			'new_lines' => '',
+		),
+		array(
 			'key' => 'field_5d88743ca0273',
 			'label' => 'チケットサービス埋め込み',
 			'name' => 'ticket-module',
